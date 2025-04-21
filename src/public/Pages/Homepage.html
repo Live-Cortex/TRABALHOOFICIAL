@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="../Styles/stileHome.css">
+
+  <!-- Google Maps Script -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <main class="container">
+    <header class="cabecalho">
+      <section class="logo"> 
+        <h1> Where Bus </h1>
+        <img src="../Images/logo.png" alt="logo">
+      </section>
+  
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#area-motorista">Área do Motorista</a></li>
+          <li><a href="#sobre-nos">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+  
+      <nav class="nav2">
+        <ul>
+          <li class="login">
+            <a href="../Pages/logar.html">
+              <i class="fas fa-user"></i>&nbsp; Login
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="principal">
+      <h2>Sobre o Nosso Site</h2><br>
+      <p>Nosso site foi criado por dois estudantes que conhecem de perto a correria do dia a dia de quem depende de transporte para estudar. A ideia surgiu da necessidade real de saber exatamente onde o transporte está, sem precisar ficar esperando na rua, sem saber o horário certo em que ele vai passar.
+
+      A plataforma foi desenvolvida com o intuito de oferecer mais praticidade, conforto e segurança para os estudantes. Com ela, é possível acompanhar em tempo real a localização do transporte escolar, o que permite que o aluno se organize melhor em casa — seja para comer com calma, tomar um banho tranquilo ou terminar algum compromisso sem correrias.
+
+      Além disso, o site ajuda a evitar atrasos, garantindo que o estudante esteja sempre pronto no momento certo, sem a preocupação de perder o transporte ou precisar sair com pressa. É uma solução pensada por quem vive essa realidade, para ajudar muitas outras pessoas a enfrentarem seus dias com mais tranquilidade.
+
+      Nosso objetivo é tornar a rotina dos estudantes mais leve e eficiente, usando a tecnologia como aliada para melhorar a experiência de quem precisa se locomover todos os dias para buscar seus sonhos. E isso é só o começo — queremos continuar evoluindo a plataforma, ouvindo nossos usuários e trazendo sempre novas melhorias.</p>
+    </section>
+
+    <section class="principal2">
+      
+      <gmpx-api-loader key="AIzaSyCdLMDBegxuH5y2fIwg1pAaWxZZojBAJFE" solution-channel="GMP_GE_mapsandplacesautocomplete_v2">
+      </gmpx-api-loader>
+      <gmp-map center="40.749933,-73.98633" zoom="13" map-id="DEMO_MAP_ID">
+        <div slot="control-block-start-inline-start" class="place-picker-container">
+          <gmpx-place-picker placeholder="Digite um endereço"></gmpx-place-picker>
+        </div>
+        <gmp-advanced-marker></gmp-advanced-marker>
+      </gmp-map>
+    </section>
+
+    <section class="principal3">
+      <h3>Nossa Ferramenta de Monitoramento de Transporte</h3><br>
+      
+      <p>Nossa plataforma foi desenvolvida para facilitar a vida de quem utiliza o transporte público no seu dia a dia, especialmente estudantes que precisam planejar sua rotina de forma eficiente. A ferramenta oferece um mapa interativo que permite visualizar, em tempo real, tanto a sua localização quanto a do motorista do ônibus, além de informações detalhadas sobre a rota que ele está seguindo.
+
+      Com isso, o usuário consegue acompanhar a trajetória do ônibus em tempo real e saber exatamente onde ele está, o que facilita o planejamento de saída de casa. Você pode ver a distância até o ponto de encontro, o que proporciona uma sensação de segurança e tranquilidade, pois evita que você saia de casa cedo demais ou se atrase.
+        
+      Além disso, a plataforma oferece a possibilidade de acompanhar o que o ônibus está fazendo a cada momento: se ele está parado, se está em movimento, ou se há alguma alteração na rota. Essa visibilidade proporciona maior controle e evita imprevistos que poderiam afetar o seu horário.
+        
+      Em resumo, nossa ferramenta é uma aliada poderosa para quem precisa planejar seu trajeto com precisão, podendo se basear em dados concretos e atualizados para não perder tempo e garantir que você chegue onde precisa, no momento certo</p>
+  
+    </section>
+
+    <section class="rodape">Rodapé</section>
+
+  </main>
+</body>
+</html>

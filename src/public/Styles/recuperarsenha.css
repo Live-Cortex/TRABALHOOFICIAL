@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    height: 100vh;   font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #364eb900;
+    background-image: url(../Images/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;         
+}
+
+form {
+    text-align: center;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #00000098;
+    border-radius: 20px;       
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2); 
+    width: 70vw;  
+    height: 50vh;           
+    max-width: 500px;       
+}
+
+form h1 {
+    font-size: 50px;
+    font-weight: bold;
+    background-color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+
+form.email-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-container label {
+    color: rgb(255, 251, 251);
+    margin: .5rem;
+}
+
+.email-container input {
+    outline: none;
+    border: 1px solid orangered;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    color: rgb(83, 83, 83);
+    border-radius: 1rem;
+}
+
+form input[type="submit"] {
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding-block: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+}
